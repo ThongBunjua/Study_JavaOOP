@@ -7,11 +7,13 @@ class animal{
 }
 
 class zoo{
-    String animalname;
-
+    String animalName;
     zoo(String name, animal animalType){
-        System.out.println(name);
         this.animalName = name;
+    }
+
+    public void showAnimalName(){
+        System.out.println(this.animalName);
     }
 
 }
@@ -20,16 +22,7 @@ public class aggregation2 {
     public static void main(String[] args) {
         animal category = new animal("-- Predators --");
         zoo myvisit = new zoo("Tiger", category);
+        myvisit.showAnimalName();
     }
 }
 
-
-
-
-
-
-
-
-public class aggregation2 {
-    
-}
